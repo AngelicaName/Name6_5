@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱Cats</title>
+    <style>
+        
+        h1 {
+            color: #6654F1;
+            font-size: 50px;
+            text-align: center;
+        }
+        span {
+            color: red;
+        }
+
+        h2 {
+            color:blue;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        img {
+            width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            line-height: 10mm;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: rgb(194, 52, 250);
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 25px 70px;
+            font-size: 35px;
+            border: 2px solid blueviolet;
+            border-radius: 25px;
+            box-shadow: 11px 8px 5px rgb(80, 40, 80);
+            color: blueviolet;
+            background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+            transition: all 250ms ease-in-out;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background: radial-gradient(circle at 1.5% 2.8%, rgb(69, 237, 244) 23.2%, rgb(26, 243, 158) 45%, rgb(241, 78, 163) 93.1%);;   
+            color: rgb(250, 174, 250);
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+            padding: 30px 30px 30px 30px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="page">
+
+    <h1>
+        I love cats <span>❤</span>
+    </h1>
+
+    <h2>
+        <hr>
+        <em> Cats are one of the most popular pets </em>
+    </h2>
+
+    <img src="https://st1.latestly.com/wp-content/uploads/2021/08/31-6.jpg" alt="">
+
+    <p>
+        It was long thought that cat domestication began in ancient Egypt, where cats were 
+        <br>venerated from around 3100 BC, but recent advances in archaeology and genetics have 
+        <br>shown that their domestication occurred in Western Asia around 7500 BC. As of 2021, 
+        <br>there were an estimated 220 million owned and 480 million stray cats in the world. 
+        <br>As of 2017, the domestic cat was the second most popular pet in the United States, 
+        <br>with 95.6 million cats owned and around 42 million households own at least one cat. 
+        <br>In the United Kingdom, 26% of adults have a cat with an estimated population 
+        <br>of 10.9 million pet cats as of 2020.
+    </p>
+        
+    <a href="https://en.wikipedia.org/wiki/Cat" ><strong>Read on Wikipedia</strong></a>
+        
+        
+    <button>
+        Hello
+    </button>
+
+    </div>
+
+    <p class="footer">This page was built by Angelica Kononenko</p>
+
+    <script>
+        let button = document.querySelector("button");
+        button.addEventListener("click", Hello);
+    
+        function Hello() {
+           
+            let name = prompt("What is your cat's name?");
+            if (name.length > 0) {
+            alert(name + " will receive a present from our Pet Shop!🎁");
+            } else {
+            alert("You can buy cat in our Pet Shop!🐈");    
+            }
+
+        } 
+     
+    </script>
+
+</body>
+</html>
